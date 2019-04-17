@@ -1,0 +1,33 @@
+{
+    "generator-jhipster": {
+        "promptValues": {
+            "packageName": "com.cenfotec.test"
+        },
+        "jhipsterVersion": "5.7.2",
+        "applicationType": "monolith",
+        "baseName": "test",
+        "packageName": "com.cenfotec.test",
+        "packageFolder": "com/cenfotec/test",
+        "serverPort": "8080",
+        "authenticationType": "jwt",
+        "cacheProvider": "ehcache",
+        "enableHibernateCache": true,
+        "websocket": false,
+        "databaseType": "sql",
+        "devDatabaseType": "mysql",
+        "prodDatabaseType": "mysql",
+        "searchEngine": false,
+        "messageBroker": false,
+        "serviceDiscoveryType": false,
+        "buildTool": "maven",
+        "enableSwaggerCodegen": false,
+        "jwtSecretKey": "NjYwOGZmMjE1OTg1NTM0NGYxNTFiMGMyMjY3ZDZhZjQwOGJiMTY1Y2FiM2RjZmM4OWNlMzQ1NDYzMGNjYTVkOGZhNjY5ZDE0MGUzZTM4YzcwZTlhNDE3NmY1MDNlYjU1NzdhM2NiN2FmODE0N2VhMzZlODFkZDQ5MzBlZDExNGM=",
+        "clientFramework": "angularX",
+        "useSass": false,
+        "clientPackageManager": "npm",
+        "testFrameworks": [],
+        "jhiPrefix": "jhi",
+        "otherModules": [],
+        "enableTranslation": false
+    }
+}
