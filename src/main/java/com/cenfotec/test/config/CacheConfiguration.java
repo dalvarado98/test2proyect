@@ -38,6 +38,20 @@ public class CacheConfiguration {
             cm.createCache(com.cenfotec.test.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(com.cenfotec.test.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.cenfotec.test.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(com.cenfotec.test.domain.Period.class.getName(), jcacheConfiguration);
+            cm.createCache(com.cenfotec.test.domain.Period.class.getName() + ".projects", jcacheConfiguration);
+            cm.createCache(com.cenfotec.test.domain.Project.class.getName(), jcacheConfiguration);
+            cm.createCache(com.cenfotec.test.domain.Project.class.getName() + ".teams", jcacheConfiguration);
+            cm.createCache(com.cenfotec.test.domain.Team.class.getName(), jcacheConfiguration);
+            cm.createCache(com.cenfotec.test.domain.Team.class.getName() + ".students", jcacheConfiguration);
+            cm.createCache(com.cenfotec.test.domain.Team.class.getName() + ".sprints", jcacheConfiguration);
+            cm.createCache(com.cenfotec.test.domain.Sprint.class.getName(), jcacheConfiguration);
+            cm.createCache(com.cenfotec.test.domain.Sprint.class.getName() + ".stories", jcacheConfiguration);
+            cm.createCache(com.cenfotec.test.domain.Student.class.getName(), jcacheConfiguration);
+            cm.createCache(com.cenfotec.test.domain.Story.class.getName(), jcacheConfiguration);
+            cm.createCache(com.cenfotec.test.domain.Story.class.getName() + ".students", jcacheConfiguration);
+            cm.createCache(com.cenfotec.test.domain.Story.class.getName() + ".reviews", jcacheConfiguration);
+            cm.createCache(com.cenfotec.test.domain.Review.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

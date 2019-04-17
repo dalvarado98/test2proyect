@@ -1,0 +1,63 @@
+entity Period {
+    startDate Instant,
+    endDate Instant,
+    name String required
+}
+
+entity Project {
+    name String,
+    numStudent Long,
+    schedule String,
+    status String
+}
+
+entity Team {
+    name String,
+    status String
+}
+
+entity Sprint {
+    name String,
+    endDate Instant,
+    startDate Instant,
+    status String
+}
+
+entity Student {
+    name String,
+    lastName String,
+    role String,
+    status String
+}
+
+entity Story {
+    code String,
+    name String,
+    description String,
+    status String
+}
+
+entity Review {
+    timestamp Instant,
+    comment String,
+    status String
+}
+
+relationship OneToMany {
+    Period{Project} to Project,
+    Project{Team} to Team,
+    Team{Student} to Student,
+    Team{Sprint} to Sprint,
+    Sprint{Story} to Story,
+    Story{Student} to Student,
+    Story{Review} to Review
+}
+// Set pagination options
+paginate Project, Team, Sprint with infinite-scroll
+paginate Story, Student with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
